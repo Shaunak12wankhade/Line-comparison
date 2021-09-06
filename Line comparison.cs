@@ -10,7 +10,7 @@ namespace Line_comparison1
     {
         static void Main(string[] args)
         {
-            //UC2 Calculating the equality Of two Lines
+            //UC3 Comparison Of two Lines
 
             double x1, x2, y1, y2;
             double a1, a2, b1, b2;
@@ -36,9 +36,13 @@ namespace Line_comparison1
             {
                 Console.WriteLine("The Length of two lines is equal.");
             }
-            else
+            else if (length1 > length2)
             {
-                Console.WriteLine("The Length of two lines is not equal.");
+                Console.WriteLine("The Length of line 1 is greater than line 2.");
+            }
+            else if (length1 < length2)
+            {
+                Console.WriteLine("The Length of line 1 is lesser than line 2.");
             }
         }
     }
